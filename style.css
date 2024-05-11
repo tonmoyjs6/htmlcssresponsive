@@ -21,9 +21,17 @@
 .features div{
     width: 50%;
 }
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.gallery img{
+    width: 100%;
+    height: 200px;
+}
 
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) and (min-width: 400px) {
 
     .header_left{
         width: 100%;
@@ -38,5 +46,7 @@
     .features div{
         width: 100%;
     }
-    
+    .gallery{
+        grid-template-columns: 1fr;
+    }
 }
